@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+    .greybox {
+        width: 100%;
+        height: 600px;
+        background: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .greybox {
+            flex-direction: column;
+            height: 1200px;
+            justify-content: space-around;
+        }
+    }
+      .blackbox {
+        width: 55%;
+        height: 600px;
+        background: #111214;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+        padding: 30px;
+    }
+    .blackbox h4 {
+        font-size: 12px;
+        padding: 5px;
+        font-weight: 500;
+    }
+    .blackbox h1 {
+        font-size: 50px;
+        padding: 5px;
+        margin: 0px;
+    }
+    .blackbox h5 {
+        font-size: 13px;
+        padding: 5px;
+        margin: 5px;
+        font-weight: 100;
+    }
+    .blackbox h6 {
+        font-size: 10px;
+        padding: 7px;
+        margin: 7px;
+        font-weight: 100;
+    }
+    .blackbox h5,h6 {
+        margin: 5px;
+    }
+    .blackbox input {
+        background-color: #1A1B1E;
+        color: white;
+        width: 80%;
+        border-radius: 15px;
+        border: 1px solid #1A1B1E;
+        height: 30px;
+        padding: 5px;
+        margin: 5px;
+    }
+    @media (max-width:600px) {
+        .blackbox {
+            width: 100%;
+        }
+    }
+    .whitebox {
+        width: 45%;
+        height: 600px;
+        background: #F5F3EF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .whitebox {
+            width: 100%;
+        }
+    }
+    .wheatbox {
+        width: 70%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Poppins',sans-serif;
+    }
+    .wheatbox h4 {
+        font-size: 13px;
+        font-weight: 100;
+    }
+    .wheatbox h1,h6 {
+        padding: 0px;
+        margin: 5px;
+    }
+    .wheatbox h6 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .wheatbox h5 {
+        letter-spacing: 2px;
+    }
+    @media (max-width:600px) {
+        .wheatbox {
+            width: 80%;
+        }
+    }
+    input {
+        width: 98%;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+    }
+    button {
+        border-radius: 10px;
+        background: grey;
+        color: white;
+        border: 1px solid grey;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        margin: 5px;
+    }
+    ul {
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    li a {
+        display: block;
+        background: black;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover {
+        color: gray;
+    }
+    .darkgoldenrodbox {
+        width: 100%;
+        height: 300px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about me.html">About Me</a></li>
+        <li><a href="my projects.html">My Projects</a></li>
+        <li><a href="contact me.html">Contact Me</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <div class="greybox">
+        <div class="blackbox">
+            <h4 style="color: yellow;">⭐ WEEKLY NEWSLETTER</h4>
+            <h1 style="color: white;">Building the web, one site at a time.</h1>
+            <h5 style="color: white;">Hey, i'm a teenager developer who's built 7+</h5>
+            <h5 style="color: white;">proffesional websites (with my tutor's help). Every week</h5>
+            <h5 style="color: white;">I share what i'm learning, building, and sometimes</h5>
+            <h5 style="color: white;">breaking.</h5>
+
+            <h6 style="color: white;">🟨 Coding tips & tricks i learn each week</h6>
+            <h6 style="color: white;">🟨 Behind-the-scenes on every new website i build</h6>
+            <h6 style="color: white;">🟨 Resources that actually helped a beginning like me</h6>
+            <h6 style="color: white;">🟨 Honest lessons from making real mistakes</h6>
+            <input type="text" placeholder="How i built a full booking system in one weekend                                            
+            Project">
+            <input type="text" placeholder="5 CSS tricks that changed the way i write layouts                                             
+            Tips">
+            <input type="text" placeholder="what i wished someone told me before building my first website                    
+            Lessons">
+        </div>
+        <div class="whitebox">
+            <div class="wheatbox">
+            <h4 style="color: grey;">Join 240+ readers already subscribed</h4>
+            <h1 style="color: black;">Get the newsletter.</h1>
+            <h6 style="color: grey;">No spam. No fluff Just a real teenager sharing real 
+                progress every Monday morning.</h6>
+            <h5 style="color: grey;">FIRST NAME</h5>
+            <input type="text" placeholder="Your first name">
+            <h5 style="color: grey;">EMAIL ADDRESS</h5>
+            <input type="text" placeholder="you@example.com">
+            <button>Subscribe —— it's free →</button>
+            <h4 style="color: grey;">Unsubscribe anytime. Your inbox, your rules.</h4>
+            <h4 style="color: grey;">——————— or follow along ———————</h4>
+            <h4 style="color: grey;">Build by a teenager learning to build the web - 7 saes and 
+                councog</h4>
+        </div>
+        </div>
+    </div>
+    <div class="darkgoldenrodbox">
+        <h3 style="color: white;">STUDENTLOGIN ABOUT PRIVACY TERMS DISCLAIMER CONTACT</h3>
+        <h4 style="color: white;">COPYRIGHT © NOWKNOW LTD 2026 ALL RIGHTS RESERVED</h4>
+    </div>
+</body>
+</html>
