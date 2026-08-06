@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+    button {
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+    
+    .greenbox {
+        width: 100%;
+        height: 550px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .darkorangebox {
+        width: 35%;
+        height: 500px;
+        background: darkorange;
+        background-image:url(Pic23.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .darkorangebox {
+            width: 55%;
+        }
+    }
+    .orangebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+    }
+
+    @media (max-width:600px) {
+        .orangebox {
+           width: 45%;
+           height: 300px;
+        }
+    }
+    .khakibox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .khakibox button {
+        border-radius: 20px;
+    }
+    .khakibox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    @media (max-width:600px) {
+        .khakibox {
+            font-size: 18.7px;
+            width: 100%;
+            text-align: center;
+        }
+        .khakibox button {
+            padding: 6px;
+            height: 25px;
+        }
+    }
+    .orangeredbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cyanbox {
+        width: 35%;
+        height: 500px;
+        background: cyan;
+        background-image:url(Pic28.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .cyanbox {
+            width: 55%;
+        }
+    }
+    .darkcyanbox {
+        width: 30%;
+        height: 330px;
+        background: rgb(7, 7, 7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .darkcyanbox {
+            width: 45%;
+            height: 300px;
+        }
+    }
+    .darkkhakibox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .darkkhakibox button {
+        border-radius: 20px;
+    }
+    .darkkhakibox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    @media (max-width:600px) {
+        .darkkhakibox {
+            font-size: 18.7px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .lightseagreenbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lightskybluebox {
+        width: 35%;
+        height: 500px;
+        background: lightskyblue;
+        background-image:url(Pic26.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mediumpurplebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .deeppinkbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .deeppinkbox button {
+        border-radius: 20px;
+    }
+    .deeppinkbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .deepskybluebox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bisquebox {
+        width: 35%;
+        height: 500px;
+        background: bisque;
+        background-image:url(Pic27.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .beigebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .darkolivegreenbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .darkolivegreenbox button {
+        border-radius: 20px;
+    }
+    .darkolivegreenbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .lightgraybox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lightyellowbox {
+        width: 35%;
+        height: 500px;
+        background: lightyellow;
+        background-image:url(Pic25.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mediumbluebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumvioletredbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .mediumvioletredbox button {
+        border-radius: 20px;
+    }
+    .mediumvioletredbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .mediumorchidbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumslatebluebox {
+        width: 35%;
+        height: 500px;
+        background: mediumslateblue;
+        background-image:url(Pic24.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mediumturquoisebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumseagreenbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .mediumseagreenbox button {
+        border-radius: 20px;
+    }
+    .mediumseagreenbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .mediumspringgreenbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumquamarineebox {
+        width: 35%;
+        height: 500px;
+        background: mediumaquamarine;
+        background-image:url(Pic29.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cadetbluebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cornsilkbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .cornsilkbox button {
+        border-radius: 20px;
+    }
+    .cornsilkbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    ul {
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    li a {
+        display: block;
+        background: black;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover {
+        color: gray;
+    }
+    .darkgoldenrodbox {
+        width: 100%;
+        height: 300px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about me.html">About Me</a></li>
+        <li><a href="my projects.html">My Projects</a></li>
+        <li><a href="contact me.html">Contact Me</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <div class="lightseagreenbox">
+        <div class="mediumpurplebox">
+            <div class="deeppinkbox">
+            <h2 style="color: white;"?.>Interior Design Website</h2>
+            <h4 style="color: white;">A Stylish interior design website featuring 
+                elegant layouts, beautiful visuals, and a modern interface that highlights 
+                creativity and design excellence.</h4>
+            <button>Practice Project</button>                         
+            </div>
+        </div>
+        <div class="lightskybluebox"></div>
+    </div>
+    <div class="orangeredbox">
+        <div class="cyanbox"></div>
+        <div class="darkcyanbox">
+            <div class="darkkhakibox">
+            <h2 style="color: white;">Home Care Website</h2>
+            <h4 style="color: white;">A Professional home care website  created to 
+                showcase healthcare Services, build trust with visitors, and present 
+                information in a clear and accesible way.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+    </div>
+    <div class="greenbox">
+        <div class="orangebox">
+            <div class="khakibox">
+            <h2 style="color: white;">Resturant Website</h2>
+            <h4 style="color: white;">A modern resturant website designed with a clear 
+                layout, attractive food sections and a responsive design to provide a great 
+                user experience across all devices</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+        <div class="darkorangebox"></div>
+    </div>
+    <div class="deepskybluebox">
+        <div class="bisquebox"></div>
+        <div class="beigebox">
+            <div class="darkolivegreenbox">
+            <h2 style="color: white;"?.>Health Care Website</h2>
+            <h4 style="color: white;">A responsive healthcare website built with a clean
+                and user, friendly design, making it easy for visitors to explore medical 
+                Services and important information.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+    </div>
+    <div class="lightgraybox">
+        <div class="mediumbluebox">
+            <div class="mediumvioletredbox">
+                <h2 style="color: white;"?.>Proffessional Portfolio Website 1</h2>
+            <h4 style="color: white;">A personal portfolio website developed to showcase
+                skills, projects and achievements with a modern and responsive design.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+        <div class="lightyellowbox"></div>
+    </div>
+    <div class="mediumorchidbox">
+        <div class="mediumslatebluebox"></div>
+        <div class="mediumturquoisebox">
+            <div class="mediumseagreenbox">
+            <h2 style="color: white;"?.>Proffessional Portfolio Website 2</h2>
+            <h4 style="color: white;">A Creative portfolio website focused on presenting 
+                work through clean layouts, smooth navigation, and an engaging user
+                experience.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+    </div>
+    <div class="mediumspringgreenbox">
+        <div class="cadetbluebox">
+           <div class="cornsilkbox">
+                <h2 style="color: white;"?.>Spa Website</h2>
+            <h4 style="color: white;">A relaxing and elegant spa website designed to promote
+                wellness services through a calming color scheme, modern design, and responsive
+                layout.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div> 
+        <div class="mediumquamarineebox"></div>
+    </div>
+    <div class="darkgoldenrodbox">
+        <h3 style="color: white;">STUDENTLOGIN ABOUT PRIVACY TERMS DISCLAIMER CONTACT</h3>
+        <h4 style="color: white;">COPYRIGHT © NOWKNOW LTD 2026 ALL RIGHTS RESERVED</h4>
+    </div>
+</body>
+</html>
