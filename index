@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
+<style>
+    .darkbluebox {
+        width: 100%;
+        height: 600px;
+        background: darkblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(Pic22.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .brownbox {
+        width: 60%;
+        height: 400px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+    }
+    .brownbox h1,h5,h4 {
+        font-weight: 200;
+    }
+    .brownbox h1 {
+        font-size: 60px;
+    }
+    .brownbox h4 {
+        font-size: 15px;
+    }
+    .lightpinkbox {
+        width: 50%;
+        height: 100px;
+        background: transparent;
+    }
+    .lightpinkbox button {
+        background: #000;
+        color: #fff;
+        border-radius: 20px;
+        border: 1px solid #fff;
+    }
+    .lightpinkbox button:hover {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+    }
+    .brownbox h6 button {
+        margin: 5px;
+        padding: 5px;
+    }
+    .brownbox h1 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .brownbox button {
+        margin-top: 30px;
+    }
+
+    @media (max-width:600px) {
+        .brownbox {
+            font-size: 13px;
+            width: 85%;
+        }
+    }
+
+    @media (min-width:601px)and(max-width:1024px) {
+        .brownbox {
+            font-size: 15px;
+            width: 100%;
+        }
+    }
+    button {
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+        cursor: pointer;
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+    .blackbox {
+        width: 100%;
+        height: 300px;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+    }
+    .blackbox h1,h6 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .blackbox button {
+        border-radius: 20px;
+        width: 30%;
+    }
+    .blackbox button:hover {
+        background: black;
+        color: white;
+        border: 1.5px solid #fff;
+    }
+    @media (max-width:600px) {
+        .blackbox { 
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+    .greybox {
+        width: 100%;
+        height: 300px;
+        background: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+    }
+    .greybox h1,h6 {
+        margin: 0px;
+        padding: 0px;
+    }
+    .greybox button {
+        border-radius: 20px;
+        width: 30%;
+    }
+    .greybox button:hover {
+        background: grey;
+        color: white;
+        border: 1.5px solid #fff;
+    }
+    @media (max-width:600px) {
+        .greybox {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+    .whitebox {
+        width: 100%;
+        height: 600px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (max-width:600px) {
+        .whitebox {
+            height: 1100px;
+            flex-direction: column;
+        }
+    }
+    .redbox {
+        width: 35%;
+        height: 500px;
+        background: red;
+        background-image:url(Pic2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .redbox {
+            width: 100%;
+            height: 200;
+        }
+    }
+    .yellowgreenbox {
+        width: 45%;
+        height: 600px;
+        background: transparent;
+    }
+
+    @media (max-width:600px) {
+        .yellowgreenbox {
+            width: 90%;
+            height: 400px;
+            font-size: 13px;
+            font-weight: 900;
+        }
+    }
+    .greenbox {
+        width: 100%;
+        height: 550px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .darkorangebox {
+        width: 35%;
+        height: 500px;
+        background: darkorange;
+        background-image:url(Pic23.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .darkorangebox {
+            width: 55%;
+        }
+    }
+    .orangebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+    }
+
+    @media (max-width:600px) {
+        .orangebox {
+           width: 45%;
+           height: 300px;
+        }
+    }
+    .khakibox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .khakibox button {
+        border-radius: 20px;
+    }
+    .khakibox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    @media (max-width:600px) {
+        .khakibox {
+            font-size: 18.7px;
+            width: 100%;
+            text-align: center;
+        }
+        .khakibox button {
+            padding: 6px;
+            height: 25px;
+        }
+    }
+    .orangeredbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cyanbox {
+        width: 35%;
+        height: 500px;
+        background: cyan;
+        background-image:url(Pic28.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .cyanbox {
+            width: 55%;
+        }
+    }
+    .darkcyanbox {
+        width: 30%;
+        height: 330px;
+        background: rgb(7, 7, 7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .darkcyanbox {
+            width: 45%;
+            height: 300px;
+        }
+    }
+    .darkkhakibox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .darkkhakibox button {
+        border-radius: 20px;
+    }
+    .darkkhakibox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    @media (max-width:600px) {
+        .darkkhakibox {
+            font-size: 18.7px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .lightseagreenbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lightskybluebox {
+        width: 35%;
+        height: 500px;
+        background: lightskyblue;
+        background-image:url(Pic26.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mediumpurplebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .deeppinkbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .deeppinkbox button {
+        border-radius: 20px;
+    }
+    .deeppinkbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .deepskybluebox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bisquebox {
+        width: 35%;
+        height: 500px;
+        background: bisque;
+        background-image:url(Pic27.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .beigebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .darkolivegreenbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .darkolivegreenbox button {
+        border-radius: 20px;
+    }
+    .darkolivegreenbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .lightgraybox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lightyellowbox {
+        width: 35%;
+        height: 500px;
+        background: lightyellow;
+        background-image:url(Pic25.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mediumbluebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumvioletredbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .mediumvioletredbox button {
+        border-radius: 20px;
+    }
+    .mediumvioletredbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .mediumorchidbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumslatebluebox {
+        width: 35%;
+        height: 500px;
+        background: mediumslateblue;
+        background-image:url(Pic24.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .mediumturquoisebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumseagreenbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .mediumseagreenbox button {
+        border-radius: 20px;
+    }
+    .mediumseagreenbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .mediumspringgreenbox {
+        width: 100%;
+        height: 600px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mediumquamarineebox {
+        width: 35%;
+        height: 500px;
+        background: mediumaquamarine;
+        background-image:url(Pic29.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cadetbluebox {
+        width: 30%;
+        height: 330px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cornsilkbox {
+        width: 90%;
+        height: 270px;
+        background: transparent;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .cornsilkbox button {
+        border-radius: 20px;
+    }
+    .cornsilkbox button:hover {
+        background: #000;
+        color: #fff;
+    }
+    .wheatbox {
+        width: 100%;
+        height: 100px;
+        background: #f3f1eb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+
+    @media (max-width:600px) {
+        .wheatbox {
+            font-size: 15px;
+        }
+    }
+    .magentabox {
+        width: 100%;
+        height: 430px;
+        background: #f3f1eb;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (max-width:600px) {
+        .magentabox {
+            height: 1300px;
+            flex-direction: column;    
+        }
+    }
+    .plumbox {
+        width: 20%;
+        height: 370px;
+        background: plum;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 10px solid #1e293b;
+        background-image:url(Pic5.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .plumbox {
+            width: 80%;
+            height: 200px;
+        }
+    }
+    .lightslategraybox {
+        width: 20%;
+        height: 370px;
+        background: lightslategray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 10px solid #1e293b;
+        background-image:url(Pic6.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .lightslategraybox {
+            width: 80%;
+            height: 200px;
+        }
+    }
+    .lightslategreybox {
+        width: 20%;
+        height: 370px;
+        background: lightslategrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 10px solid #1e293b;
+        background-image:url(Pic7.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    @media (max-width:600px) {
+        .lightslategreybox {
+            width: 80%;
+            height: 200px;
+        }
+    }
+    .lightsteelbluebox {
+        width: 20%;
+        height: 370px;
+        background: lightsteelblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 10px solid #1e293b;
+        background-image:url(Pic8.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    @media (max-width:600px) {
+        .lightsteelbluebox {
+            width: 80%;
+            height: 200px;
+        }
+    }
+    .ghostwhitebox {
+        width: 70%;
+        height: 230px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+    }
+    .ghostwhitebox h1 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    @media (max-width:600px) {
+        .ghostwhitebox {
+            width: 50%;
+            height: 150px;
+            font-size: 10px;
+        }
+    }
+    .navybox {
+        width: 100%;
+        height: 150px;
+        background: #f3f1eb;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (max-width:600px) {
+        .navybox {
+           height: 600px;
+           flex-direction: column;
+        }
+    }
+    .purplebox {
+        width: 20%;
+        height: 150px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: lighter;
+    }
+    .purplebox button {
+        background: #000;
+        color: #fff;
+        font-weight: lighter;
+    }
+
+    @media (max-width:600px) {
+        .purplebox {
+           font-size: 10px;
+           width: 70%;
+        }
+    }
+    .rebeccapurplebox {
+        width: 100%;
+        height: 100px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    @media (max-width:600px) {
+        .rebeccapurplebox {
+            font-size: 20px;
+        }
+    }
+    .maroonbox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .yellowbox {
+        width: 20%;
+        height: 200px;
+        background: yellow;
+        margin-right: auto;
+        border-radius: 100%;
+        background-image:url(Pic9.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .yellowbox {
+            width: 30%;
+        }
+    }
+    .mintcreambox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mintcreambox h6,h3 {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width:600px) {
+        .mintcreambox {
+            font-size: 10px;
+            width: 65%;
+        }
+    }
+    .lightskyblueboxbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .bluebox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bluevioletbox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media (max-width:600px) {
+        .bluevioletbox {
+           width: 65%;
+           font-size: 10px;
+        }
+    }
+     .lavenderbox {
+        width: 20%;
+        height: 180px;
+        background: lavender;
+        border-radius: 100%;
+        background-image:url(Pic10.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .lavenderbox {
+            width: 30%;
+        }
+    }
+    .dodgerbluebox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .dimgreybox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .limebox {
+        width: 20%;
+        height: 180px;
+        background: lime;
+        margin-right: auto;
+        border-radius: 100%;
+        background-image:url(Pic11.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .limebox {
+            width: 30%;
+        }
+    }
+    .royalbluebox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media (max-width:600px) {
+        .royalbluebox {
+            width: 65%;
+            font-size: 10px;
+        }
+    }
+    .indianredbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .coralbox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lightcoralbox {
+        width: 70%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+    @media (max-width:600px) {
+        .lightcoralbox {
+            width: 65%;
+            font-size: 10px;
+        }
+    }
+    .darkredbox {
+        width: 20%;
+        height: 180px;
+        background: darkred;
+        margin-left: auto;
+        border-radius: 100%;
+        background-image:url(Pic12.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:600px) {
+        .darkredbox {
+            width: 30%;
+        }
+    }
+    .moccasinbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .crimsonbox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lawngreenbox {
+        width: 20%;
+        height: 180px;
+        background: lawngreen;
+        margin-left: auto;
+        border-radius: 100%;
+        background-image:url(Pic13.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     @media (max-width:600px) {
+        .lawngreenbox {
+            width: 30%;
+        }
+    }
+    .ivorybox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+     @media (max-width:600px) {
+        .ivorybox {
+            width: 65%;
+            font-size: 10px;
+        }
+    }
+    
+    .tealbox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+    }
+
+     @media (max-width:600px) {
+        .tealbox {
+            width: 65%;
+            font-size: 10px;
+        }
+    }
+    @media (max-width:600px) {
+        .darkredbox {
+            width: 30%;
+        }
+    }
+
+    .tanbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .steelbluebox {
+        width: 100%;
+        height: 150px;
+        background: transparent;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    .forestgreenbox {
+        width: 100%;
+        height: 470px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (max-width:600px) {
+        .forestgreenbox {
+            flex-direction: column;
+            height: 1000px;
+        }
+    }
+    .firebrickbox {
+        width: 22%;
+        height: 400px;
+        background: firebrick;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(Pic17.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width:600px) {
+        .firebrickbox {
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .floralwhitebox {
+        width: 22%;
+        height: 400px;
+        background: floralwhite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(Pic18.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     @media (max-width:600px) {
+        .floralwhitebox {
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .fuchsiabox {
+        width: 22%;
+        height: 400px;
+        background: fuchsia;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(Pic19.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     @media (max-width:600px) {
+        .fuchsiabox {
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .linenbox {
+        width: 22%;
+        height: 400px;
+        background: linen;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image:url(Pic20.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     @media (max-width:600px) {
+        .linenbox {
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .tomatobox {
+        width: 70%;
+        height: 220px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+
+    @media (max-width:600px) {
+        .tomatobox {
+            width: 60%;
+            height: 150px;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+    .turquoisebox {
+        width: 70%;
+        height: 220px;
+        background:#000 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+
+     @media (max-width:600px) {
+        .turquoisebox {
+            width: 60%;
+            height: 150px;
+            text-align: center;
+            font-size: 10px;
+        }
+    }
+    .springgreenbox {
+        width: 100%;
+        height: 100px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+
+    @media (max-width:600px) {
+        .springgreenbox {
+            font-size: 10px;
+        }
+    }
+    .peachpuffbox {
+        width: 100%;
+        height: 300px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .chocolatebox {
+        width: 20%;
+        height: 150px;
+        background: transparent;
+        align-self: baseline;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+    }
+
+    @media (max-width:600px) {
+        .chocolatebox {
+            font-size: 10px;
+        }
+        .chocolatebox button{
+            font-size: 10px;
+            padding: 5px;
+        }
+    }
+    .chocolatebox button {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        padding: 10px;
+        margin-right: auto;
+    }
+    .chartreusebox {
+        width: 20%;
+        height: 250px;
+        background: chartreuse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image:url(Pic21.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .lemonciffonbox {
+        width: 70%;
+        height: 70px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        border-radius: 10px;
+    }
+
+    @media (max-width:600px) {
+        .lemonciffonbox {
+            font-size: 10px;
+        }
+    }
+    .powderbluebox {
+        width: 50%;
+        height: 40px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        border-radius: 10px;
+    }
+
+    @media (max-width:600px) {
+        .powderbluebox {
+            font-size: 10px;
+            width: 80px;
+            border-radius: 10px;
+        }
+    }
+    .darkgoldenrodbox {
+        width: 100%;
+        height: 300px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media (max-width:600px) {
+        .darkgoldenrodbox {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+    ul {
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    li a {
+        display: block;
+        background: black;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover {
+        color: gray;
+    }
+</style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about me.html">About Me</a></li>
+        <li><a href="my projects.html">My Projects</a></li>
+        <li><a href="contact me.html">Contact Me</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <div class="darkbluebox">
+       <div class="brownbox">
+        <h5 style="color: white;">Hi, i'm</h5>
+        <h1 style="color: white;">Olabode Precious</h1>
+        <h4 style="color: white;">Front-End Web Developer | Student | Lifelong Learner</h4>
+        <h5 style="color: white;">i am a passionate 14-years-old front-end web Developer
+            currently learning HTML,CSS, and JavaScript at Habod Design and Technology.
+            i enjoy building responsive, modern, and user-friendly websites while 
+            improving my skills through hands-on projects every day</h5>
+            <div class="lightpinkbox">
+                <button>View My Projects</button>
+                <button>Contact Me</button>
+            </div>
+      </div>
+    </div>
+    <div class="blackbox">
+       <h1 style="color: white;">About Me<h1>
+       <h4 style="color: white;">Learn more about my journey,skills,and passion for web 
+        development.</h4>
+       <button>Learn More</button>
+    </div>
+    <div class="greybox">
+       <h1 style="color: white;">My Projects</h1>
+       <h4 style="color: white;">Explore the websites i'ave built and the skills i've 
+        developed.</h4>
+       <button>View Projects</button>
+    </div>
+    <div class="whitebox">
+        <div class="redbox"></div>
+        <div class="yellowgreenbox">
+            <h2 style="color: black;">Hello! i'm Precious</h2>
+            <h5 style="color: black;">Hello! i'm Olabode Precious, a 14-year - old 
+                aspiring front-end web developer from Nigeria and a Juniour Secondary School 
+                3 (JSS3) student. i have a passion for technology and enjoy turning ideas 
+                into beautiful and functional websites.</h5>
+            <h5 style="color: black;">I am a currently learning HTML, CSS, JavaScript at
+                Habod Design and Technology. My web development journey began just over 2
+                months ago, and since then i have been committed to learning everyday 
+                through practice, projects, and continuous improvement.</h5>
+            <h5 style="color: black;">As part of my learning experience, i have 
+                successfully recreated Seven websites to better understand how professional
+                websites are designed and developed. These projects have helped me 
+                strengthen my knowledge of HTML, improve my CSS styling skills, and build 
+                interactive features using JavaScript.</h5>
+            <h5 style="color: black;">In addition to coding, i use GitHub to manage
+                and keep track of my projects, allowing me to document my progress and learn
+                the basics of version control. i also make use of AI tools to enhance my 
+                learning experience, explore new ideas, solve programming challenges, and a 
+                more efficient developer.</h5>
+            <h5 style="color: black;">I believe that eand responsivevery project is an opportunity to 
+                learn something new. My goal is to continue improving my skills, create 
+                original and responsive websites, and eventually become a professional 
+                software developer who builds solutions that make a positive impact.</h5>
+            <h5 style="color: black;">This portfolio represents my journey, dedication
+                and growth as a young developer. Every project you see here reflects the  
+                knowledge i've gained and the progress i've made so far. Thank you for 
+                taking the time to visit my Portfolio. i hope you enjoy exploring my work, 
+                and i look forward to sharing many more porjects as i continue growing in 
+                the world of web development.</h5>
+        </div> 
+    </div>
+   <div class="lightseagreenbox">
+        <div class="mediumpurplebox">
+            <div class="deeppinkbox">
+            <h2 style="color: white;"?.>Interior Design Website</h2>
+            <h4 style="color: white;">A Stylish interior design website featuring 
+                elegant layouts, beautiful visuals, and a modern interface that highlights 
+                creativity and design excellence.</h4>
+            <button>Practice Project</button>                         
+            </div>
+        </div>
+        <div class="lightskybluebox"></div>
+    </div>
+    <div class="orangeredbox">
+        <div class="cyanbox"></div>
+        <div class="darkcyanbox">
+            <div class="darkkhakibox">
+            <h2 style="color: white;">Home Care Website</h2>
+            <h4 style="color: white;">A Professional home care website  created to 
+                showcase healthcare Services, build trust with visitors, and present 
+                information in a clear and accesible way.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+    </div>
+    <div class="greenbox">
+        <div class="orangebox">
+            <div class="khakibox">
+            <h2 style="color: white;">Resturant Website</h2>
+            <h4 style="color: white;">A modern resturant website designed with a clear 
+                layout, attractive food sections and a responsive design to provide a great 
+                user experience across all devices</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+        <div class="darkorangebox"></div>
+    </div>
+    <div class="deepskybluebox">
+        <div class="bisquebox"></div>
+        <div class="beigebox">
+            <div class="darkolivegreenbox">
+            <h2 style="color: white;"?.>Health Care Website</h2>
+            <h4 style="color: white;">A responsive healthcare website built with a clean
+                and user, friendly design, making it easy for visitors to explore medical 
+                Services and important information.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+    </div>
+    <div class="lightgraybox">
+        <div class="mediumbluebox">
+            <div class="mediumvioletredbox">
+                <h2 style="color: white;"?.>Proffessional Portfolio Website 1</h2>
+            <h4 style="color: white;">A personal portfolio website developed to showcase
+                skills, projects and achievements with a modern and responsive design.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+        <div class="lightyellowbox"></div>
+    </div>
+    <div class="mediumorchidbox">
+        <div class="mediumslatebluebox"></div>
+        <div class="mediumturquoisebox">
+            <div class="mediumseagreenbox">
+            <h2 style="color: white;"?.>Proffessional Portfolio Website 2</h2>
+            <h4 style="color: white;">A Creative portfolio website focused on presenting 
+                work through clean layouts, smooth navigation, and an engaging user
+                experience.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div>
+    </div>
+    <div class="mediumspringgreenbox">
+        <div class="cadetbluebox">
+           <div class="cornsilkbox">
+                <h2 style="color: white;"?.>Spa Website</h2>
+            <h4 style="color: white;">A relaxing and elegant spa website designed to promote
+                wellness services through a calming color scheme, modern design, and responsive
+                layout.</h4>
+            <button>Practice Project</button>
+            </div>
+        </div> 
+        <div class="mediumquamarineebox"></div>
+    </div>
+    <div class="wheatbox">
+        <h1 style="color: black;">Resources for Artists</h1>
+    </div>
+    <div class="magentabox">
+        <div class="plumbox">
+            <div class="ghostwhitebox">
+                <h1 style="color: black;">The Ultimate</h1>
+                <h1 style="color: black;">Online</h1>
+                <h1 style="color: black;">Art Business </h1>
+                <h1 style="color: black;">Checklist</h1>
+            </div>
+        </div>
+        <div class="lightslategraybox">
+            <div class="ghostwhitebox">
+                <h1 style="color: black;">A-Z Gallery</h1>
+                <h1 style="color: black;">Gllossary</h1>
+            </div>
+        </div>
+        <div class="lightslategreybox">
+             <div class="ghostwhitebox">
+                <h1 style="color: black;">50 Email</h1>
+                <h1 style="color: black;">Subject</h1>
+                <h1 style="color: black;">Lines for</h1>
+                <h1 style="color: black;">Fine Artists</h1>
+             </div>
+        </div>
+        <div class="lightsteelbluebox">
+            <div class="ghostwhitebox">
+                <h1 style="color: black;">The Ultimate</h1>
+                <h1 style="color: black;">Guide</h1>
+                <h1 style="color: black;">to Selling</h1>
+                <h1 style="color: black;">Your Art on</h1>
+                <h1 style="color: black;">instagram</h1>
+            </div>
+        </div>
+    </div>
+    <div class="navybox">
+        <div class="purplebox">
+            <h3 style="color: black;">Download my step-by-step checklist of the most important 
+                things to create a successful online art business!</h3>
+                <button>DOWNLOAD CHECKLIST</button>
+        </div>
+        <div class="purplebox">
+            <h3 style="color: black;">Download my free expert A-Z Commercial Contemporary 
+                Art Gallery Jargon Explained Guide.</h3>
+                <button>DOWNLOAD GLOSSARY</button>
+        </div>
+        <div class="purplebox">
+            <h3 style="color: black;">Download 50 plug-and-play subject lines to help you 
+                get your subscribers to open your emails!</h3>
+                <button>DOWNLOAD SUBJECT LINES</button>
+        </div>
+        <div class="purplebox">
+            <h3 style="color: black;">A comprehensive guide with the most important things
+                you should be doing to increase your sales on instagram!</h3>
+                <button>DOWNLOAD GUIDE</button>
+        </div>
+    </div>
+    <div class="rebeccapurplebox">
+        <h1 style="color: black;">Feedback</h1>
+    </div>
+    <div class="maroonbox">
+        <div class="yellowbox"></div>
+        <div class="mintcreambox">
+            <h5 style="color: black;">"Teaching Precious has been a very rewarding experience. 
+                From the very beginning, Precious has shown genuine interest in web development and 
+                a strong desire to learn and improve.There is a clear level of commitment that is 
+                rare for someone at this stage especially in how consistently  practice is done 
+                outside of lessons. Over time, i have seen steady and noticable improvements
+                in HTML, CSS, and JavaScript skills. Precious listens carefully, and asks 
+                thoughtful questions, and is always willing to take on a new challenges even when 
+                they are difficult. Each project reflects growth in understanding, creativity, and 
+                problem solving ability.i am confident that with this level of dedication,
+                discipline, and passion for learning, Precioushas a bright future in technology 
+                and web development."</h5>
+            <h3 style="color: black;">- Tutor</h3>
+        </div>
+    </div>
+    <div class="lightskyblueboxbox"></div>
+    <div class="bluebox">
+        <div class="bluevioletbox">
+            <h5 style="color: black;">"Working and learning alongside Precious has been a very 
+                positive experience. Precious is always eager to learn new things, open to feedback, 
+                and willing to make improvements whenever needed. One thing that stand out is the 
+                consistency in effort and the desire to understand how things work rather than just 
+                completing tasks. Every new project shows clear improvements in design, structure,
+                and coding skills. it is exciting to see how quickly progress is being made in such
+                short time. Precious is also supportive and willing to help others when possible,
+                which makes working together even better. i am confident that with continued 
+                learning and practice, Precious will build amazing and professional-quality websites 
+                in the future."</h5>
+            <h3 style="color: black;">- Colleague 1</h3>
+        </div>
+        <div class="lavenderbox"></div>
+    </div>
+    <div class="dodgerbluebox"></div>
+    <div class="dimgreybox">
+        <div class="limebox"></div>
+        <div class="royalbluebox">
+            <h5 style="color: black;">"One thing i appreciate about Precious is the 
+                determmination to keep learning and improving. Every project is approached with 
+                curiosity, focus, and a desire to do better than the last one. Even when challenges
+                come up, Precious takes time to understand the problem and find solutions instead 
+                of giving up. The attention to detail in design and coding is improving steadily, 
+                and there is always a clear effort to make each project better than the previous
+                one. Working together has been enjoyable because of the positive attitude and 
+                willingness to try new ideas. i strongly believe that this dedication and mindset 
+                will continue to open many opportunities in web development and beyond."</h5>
+            <h3 style="color: black;">- Colleague 2</h3>
+        </div>
+    </div>
+    <div class="indianredbox"></div>
+    <div class="coralbox">
+        <div class="lightcoralbox">
+            <h5 style="color: black;">"i truly admire Precious's commitment to learning web 
+                development at such a young age. it's not easy to stay focused and disiplined, but 
+                Precious continues to show strong interest and dedication in every project. 
+                I ave watched the progress from the beginning, and the improvement in skills over 
+                short period time is very impressive, Each new project shows better understanding, 
+                more creativity, and more confidence in writing code. it is encouraging to see such
+                passion for technology and learning. i am very proud to support this journey and 
+                believe that with continued practice, and determination, Precious will achieve even 
+                greater success and become very skilled in the field of web development."</h5>
+            <h3 style="color: black;">- Dad</h3>
+        </div>
+        <div class="darkredbox"></div>
+    </div>
+    <div class="moccasinbox"></div>
+    <div class="crimsonbox">
+        <div class="lawngreenbox"></div>
+        <div class="ivorybox">
+            <h5 style="color: black;">"Watching Precious learn web development has been truly
+                inspiring. Every day, i see determination, patience, and a strong willingness to 
+                keep improving no matter how difficult a task may seem. Even when a project becomes
+                challenging or things , Precious never gives up and always looks for a way to 
+                fix problems and make the work better. i  ave seen consistency effort being put 
+                into learning, practicing, and building new projects, and it makes me very proud. 
+                The dedication, focus and passion shown so far are very impressive for someone so 
+                young. i strongly believe that with this level of consistency and hard work,
+                Precious will achieve great success in the future and grow into a very skilled 
+                developer."</h5>
+            <h3 style="color: black;">- Mum</h3>
+        </div>
+    </div>
+    <div class="tanbox"></div>
+    <div class="steelbluebox">
+        <h1 style="color: black;">My Favorite Quote:</h1>
+    </div>
+    <div class="forestgreenbox">
+        <div class="firebrickbox">
+            <div class="tomatobox">
+                <h2 style="color: black;">Every project is a step towards excellence.</h2>
+            </div>
+        </div>
+        <div class="floralwhitebox">
+            <div class="turquoisebox">
+                <h1 style="color: white;">Code with purpose. Create with with passion.</h1>
+            </div>
+        </div>
+        <div class="fuchsiabox">
+            <div class="tomatobox">
+                 <h3 style="color: black;">The journey of a developer begins with one project.</h3>
+            </div>
+        </div>
+        <div class="linenbox">
+            <div class="turquoisebox">
+                <h1 style="color: white;">Turning ideas into digital experiences.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="springgreenbox">
+        <h1 style="color: black;">ARE WE CONNECTED ON SOCIAL-MEDIA?</h1>
+    </div>
+    <div class="peachpuffbox">
+        <div class="chocolatebox">
+            <h1 style="color: black;">Let's connect on social-media!</h1>
+            <button>FOLLOW PRECIOUS</button>
+        </div>
+        <div class="chartreusebox">
+            <div class="lemonciffonbox">
+                <h3 style="color: white;">How to make your websites</h3>
+            </div>
+            <div class="powderbluebox">
+                <h2 style="color: black;">Stand out</h2>
+            </div>
+        </div>
+    </div>
+    <div class="darkgoldenrodbox">
+        <h3 style="color: white;">STUDENTLOGIN ABOUT PRIVACY TERMS DISCLAIMER CONTACT</h3>
+        <h4 style="color: white;">COPYRIGHT © NOWKNOW LTD 2026 ALL RIGHTS RESERVED</h4>
+    </div>
+</body>
+</html>
