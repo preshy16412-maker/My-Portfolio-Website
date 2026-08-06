@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+ <html>
+<head>
+<title></title>
+<style>
+    .whitebox {
+        width: 100%;
+        height: 600px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    @media (max-width:600px) {
+        .whitebox {
+            flex-direction: column;
+            height: 1000px;
+        }
+    }
+    .redbox {
+        width: 35%;
+        height: 500px;
+        background: red;
+        background-image:url(Pic2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:600px) {
+        .redbox {
+            width: 100%;
+        }
+    }
+    .yellowgreenbox {
+        width: 45%;
+        height: 600px;
+        background: transparent;
+    }
+    @media (max-width:600px) {
+        .yellowgreenbox {
+            width: 90%;
+        }
+    }
+    .rebeccapurplebox {
+        width: 100%;
+        height: 100px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+    .maroonbox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .maroonbox {
+            flex-direction: column;
+            height: 800px;
+        }
+    }
+    .yellowbox {
+        width: 20%;
+        height: 200px;
+        background: yellow;
+        margin-right: auto;
+        border-radius: 100%;
+        background-image:url(Pic9.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:600px) {
+        .yellowbox {
+            margin-left: auto;
+            width: 80%;
+            height: 400px;
+        }
+    }
+    .mintcreambox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mintcreambox h6,h3 {
+        margin-bottom: 20px;
+    }
+    @media (max-width:600px) {
+        .mintcreambox {
+            width: 80%;
+            align-items: flex-end;
+            height: 400px;
+            font-size: 18px;
+        }
+    }
+    .lightskyblueboxbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .bluebox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .bluebox {
+            flex-direction: column;
+            height: 900px;
+        }
+    }
+    .bluevioletbox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+    @media (max-width:600px) {
+        .bluevioletbox {
+            width: 80%;
+            align-items: flex-end;
+            height: 400px;
+            font-size: 18px;
+        }
+    }
+     .lavenderbox {
+        width: 20%;
+        height: 180px;
+        background: lavender;
+        border-radius: 100%;
+        background-image:url(Pic10.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:600px) {
+        .lavenderbox {
+            margin-left: auto;
+            width: 80%;
+            height: 400px;
+        }
+    }
+    .dodgerbluebox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .dimgreybox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .dimgreybox {
+            flex-direction: column;
+            height: 900px;
+        }
+    }
+    .limebox {
+        width: 20%;
+        height: 180px;
+        background: lime;
+        margin-right: auto;
+        border-radius: 100%;
+        background-image:url(Pic11.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:600px) {
+        .limebox {
+            margin-left: auto;
+            width: 80%;
+            height: 400px;
+        }
+    }
+    .royalbluebox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+    }
+    @media (max-width:600px) {
+        .royalbluebox {
+            width: 80%;
+            align-items: flex-end;
+            height: 400px;
+            font-size: 18px;
+        }
+    }
+    .indianredbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .coralbox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .coralbox {
+            flex-direction: column;
+            height: 900px;
+        }
+    }
+    .lightcoralbox {
+        width: 70%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+    }
+    @media (max-width:600px) {
+        .lightcoralbox {
+            width: 80%;
+            align-items: flex-end;
+            height: 400px;
+            font-size: 18px;
+        }
+    }
+    .darkredbox {
+        width: 20%;
+        height: 180px;
+        background: darkred;
+        margin-left: auto;
+        border-radius: 100%;
+        background-image:url(Pic12.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width:600px) {
+        .darkredbox {
+            margin-left: auto;
+            width: 80%;
+            height: 400px;
+        }
+    }
+    .moccasinbox {
+        width: 100%;
+        height: 1px;
+        background: #000;
+    }
+    .crimsonbox {
+        width: 100%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width:600px) {
+        .crimsonbox {
+            flex-direction: column;
+            height: 900px;
+        }
+    }
+    .lawngreenbox {
+        width: 20%;
+        height: 180px;
+        background: lawngreen;
+        margin-left: auto;
+        border-radius: 100%;
+        background-image:url(Pic13.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .ivorybox {
+        width: 75%;
+        height: 200px;
+        background: transparent;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+    }
+    ul {
+        list-style-type: none;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+    li a {
+        display: block;
+        background: black;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover {
+        color: gray;
+    }
+    .darkgoldenrodbox {
+        width: 100%;
+        height: 300px;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about me.html">About Me</a></li>
+        <li><a href="my projects.html">My Projects</a></li>
+        <li><a href="contact me.html">Contact Me</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+    <div class="whitebox">
+        <div class="redbox"></div>
+        <div class="yellowgreenbox">
+            <h2 style="color: black;">Hello! i'm Precious</h2>
+            <h5 style="color: black;">Hello! i'm Olabode Precious, a 14-year - old 
+                aspiring front-end web developer from  Nigeria and a Jun iour Secondary School 3 (JSS3) student. 
+                i have a passion for technology and enjoy turning ideas into beautiful and functional websites.</h5>
+            <h5 style="color: black;">I am a currently learning HTML, CSS, JavaScript at
+                Habod Design and Technology. My web development journey began just over 2
+                months ago, and since then i have been committed to learning everyday 
+                through practice, projects, and continuous improvement.</h5>
+            <h5 style="color: black;">As part of my learning experience, i have 
+                successfully recreated Seven websites to better understand how professional
+                websites are designed and developed. These projects have helped me 
+                strengthen my knowledge of HTML, improve my CSS styling skills, and build 
+                interactive features using JavaScript.</h5>
+            <h5 style="color: black;">In addition to coding, i use GitHub to manage
+                and keep track of my projects, allowing me to document my progress and learn
+                the basics of version control. i also make use of AI tools to enhance my 
+                learning experience, explore new ideas, solve programming challenges, and a 
+                more efficient developer.</h5>
+            <h5 style="color: black;">I believe that eand responsivevery project is an opportunity to 
+                learn something new. My goal is to continue improving my skills, create 
+                original and responsive websites, and eventually become a professional 
+                software developer who builds solutions that make a positive impact.</h5>
+            <h5 style="color: black;">This portfolio represents my journey, dedication
+                and growth as a young developer. Every project you see here reflects the  
+                knowledge i've gained and the progress i've made so far. Thank you for 
+                taking the time to visit my Portfolio. i hope you enjoy exploring my work, 
+                and i look forward to sharing many more porjects as i continue growing in 
+                the world of web development.</h5>
+        </div>
+    </div>
+    <div class="rebeccapurplebox">
+        <h1 style="color: black;">Feedback</h1>
+    </div>
+    <div class="maroonbox">
+        <div class="yellowbox"></div>
+        <div class="mintcreambox">
+            <h5 style="color: black;">"Teaching Precious has been a very rewarding experience. 
+                From the very beginning, Precious has shown genuine interest in web development and 
+                a strong desire to learn and improve.There is a clear level of commitment that is 
+                rare for someone at this stage especially in how consistently  practice is done 
+                outside of lessons. Over time, i have seen steady and noticable improvements
+                in HTML, CSS, and JavaScript skills. Precious listens carefully, and asks 
+                thoughtful questions, and is always willing to take on a new challenges even when 
+                they are difficult. Each project reflects growth in understanding, creativity, and 
+                problem solving ability.i am confident that with this level of dedication,
+                discipline, and passion for learning, Precioushas a bright future in technology 
+                and web development."</h5>
+            <h3 style="color: black;">- Tutor</h3>
+        </div>
+    </div>
+    <div class="lightskyblueboxbox"></div>
+    <div class="bluebox">
+        <div class="bluevioletbox">
+            <h5 style="color: black;">"Working and learning alongside Precious has been a very 
+                positive experience. Precious is always eager to learn new things, open to feedback, 
+                and willing to make improvements whenever needed. One thing that stand out is the 
+                consistency in effort and the desire to understand how things work rather than just 
+                completing tasks. Every new project shows clear improvements in design, structure,
+                and coding skills. it is exciting to see how quickly progress is being made in such
+                short time. Precious is also supportive and willing to help others when possible,
+                which makes working together even better. i am confident that with continued 
+                learning and practice, Precious will build amazing and professional-quality websites 
+                in the future."</h5>
+            <h3 style="color: black;">- Colleague 1</h3>
+        </div>
+        <div class="lavenderbox"></div>
+    </div>
+    <div class="dodgerbluebox"></div>
+    <div class="dimgreybox">
+        <div class="limebox"></div>
+        <div class="royalbluebox">
+            <h5 style="color: black;">"One thing i appreciate about Precious is the 
+                determmination to keep learning and improving. Every project is approached with 
+                curiosity, focus, and a desire to do better than the last one. Even when challenges
+                come up, Precious takes time to understand the problem and find solutions instead 
+                of giving up. The attention to detail in design and coding is improving steadily, 
+                and there is always a clear effort to make each project better than the previous
+                one. Working together has been enjoyable because of the positive attitude and 
+                willingness to try new ideas. i strongly believe that this dedication and mindset 
+                will continue to open many opportunities in web development and beyond."</h5>
+            <h3 style="color: black;">- Colleague 2</h3>
+        </div>
+    </div>
+    <div class="indianredbox"></div>
+    <div class="coralbox">
+        <div class="lightcoralbox">
+            <h5 style="color: black;">"i truly admire Precious's commitment to learning web 
+                development at such a young age. it's not easy to stay focused and disiplined, but 
+                Precious continues to show strong interest and dedication in every project. 
+                I ave watched the progress from the beginning, and the improvement in skills over 
+                short period time is very impressive, Each new project shows better understanding, 
+                more creativity, and more confidence in writing code. it is encouraging to see such
+                passion for technology and learning. i am very proud to support this journey and 
+                believe that with continued practice, and determination, Precious will achieve even 
+                greater success and become very skilled in the field of web development."</h5>
+            <h3 style="color: black;">- Dad</h3>
+        </div>
+        <div class="darkredbox"></div>
+    </div>
+    <div class="moccasinbox"></div>
+    <div class="crimsonbox">
+        <div class="lawngreenbox"></div>
+        <div class="ivorybox">
+            <h5 style="color: black;">"Watching Precious learn web development has been truly
+                inspiring. Every day, i see determination, patience, and a strong willingness to 
+                keep improving no matter how difficult a task may seem. Even when a project becomes
+                challenging or things , Precious never gives up and always looks for a way to 
+                fix problems and make the work better. i  ave seen consistency effort being put 
+                into learning, practicing, and building new projects, and it makes me very proud. 
+                The dedication, focus and passion shown so far are very impressive for someone so 
+                young. i strongly believe that with this level of consistency and hard work,
+                Precious will achieve great success in the future and grow into a very skilled 
+                developer."</h5>
+            <h3 style="color: black;">- Mum</h3>
+        </div>
+    </div>
+    <div class="darkgoldenrodbox">
+        <h3 style="color: white;">STUDENTLOGIN ABOUT PRIVACY TERMS DISCLAIMER CONTACT</h3>
+        <h4 style="color: white;">COPYRIGHT © NOWKNOW LTD 2026 ALL RIGHTS RESERVED</h4>
+    </div>
+</body>
+</html>
